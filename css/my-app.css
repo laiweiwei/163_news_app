@@ -1,0 +1,445 @@
+/* Your app custom files in this file */
+.view-left,
+.view-right {
+}
+/* This will fix flicker navbar in left panel view */
+.panel-left .page-content,
+.panel-right .page-content{
+  padding: 0;
+}
+.panel-left .page,
+.panel-right .page{
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.panel-left .navbar, 
+.panel-right .navbar {
+  position: relative;
+  margin-bottom: -30px;
+  background: #000;
+  /*border-bottom: 1px solid #333;*/
+}
+.panel-left .content-block,
+.panel-left .content-block-title,
+.panel-left .list-panel-title,
+.panel-right .content-block,
+.panel-right .content-block-title,
+.panel-right .list-panel-title{
+  color: #dddddd;
+}
+
+.panel-left .navbar .center,
+.panel-right .navbar .center{
+  color: #007aff;
+}
+.panel-left .navbar a.link,
+.panel-right .navbar a.link{
+  color: #fff;
+}
+.panel-left .page, 
+.panel-right .page{
+  background: #222;
+}
+.panel-left .list-block ul,
+.panel-right .list-block ul{
+  background: none;
+}
+.panel-left .list-block ul,
+.panel-left .list-block .item-inner,
+.panel-right .list-block ul,
+.panel-right .list-block .item-inner{
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.panel-left .list-block a,
+.panel-right .list-block a{
+  color: white;
+}
+.panel-left .list-block a:active,
+.panel-right .list-block a:active{
+  background: #000;
+}
+
+/* Because we have panels-overlay inside of .views we need to fix its open position for right panel */
+body.with-panel-right-reveal .panel-overlay {
+  /*margin-left: 0;*/
+}
+/* iPad Vertical 
+@media (min-width: 569px) {
+  .panel.panel-left.panel-cover {
+    width: 320px;
+    left: -320px;
+  }
+  body.with-panel-left-cover .panel-left {
+    -webkit-transform: translate3d(320px, 0, 0);
+    -ms-transform: translate3d(320px, 0, 0);
+    transform: translate3d(320px, 0, 0);
+  }
+}*/
+/* iPad Horizontal
+@media (min-width: 769px) {
+  body .panel.panel-left.panel-cover {
+    left: 0;
+    width: 320px;
+    display: block;
+  }
+  body.with-panel-left-cover .panel-left {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+  }
+  .view-main {
+    float: right;
+    width: -webkit-calc(100% - 320px);
+    width: -moz-calc(100% - 320px);
+    width: -ms-calc(100% - 320px);
+    width: calc(100% - 320px);
+  }
+  /* Let's hide panel-opener when left panel is visible
+  .view-main .navbar .left .open-panel {
+    display: none;
+  }
+} */
+
+.list-block .item-link .item-inner {
+	background-image: none;
+	background-repeat: no-repeat;
+	padding-right:15px;
+}
+
+.list-block .item-link .item-inner .arrow {
+	background-repeat: no-repeat;
+	background-image: url("../img/forward_24_gray.png");
+	background-position: 0 -3px;
+	width: 18px;
+	height: 18px;
+}
+
+i.icon.icon-world-cup-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/world_cup_32_white.png");
+}
+i.icon.icon-bars-blue,i.icon.icon-bars-black {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/menu_24_black.png");
+}
+i.icon.icon-my-black {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/my_24_black.png");
+}
+i.icon.icon-search-black {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/search_32_black.png");
+}
+i.icon.icon-logo-white {
+  margin-left:20px;
+  width: 110px;
+  height: 25px;
+  background-image: url("../img/logo_white.png");
+}
+i.icon.icon-forward-gray {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/forward_24_gray.png");
+}
+i.icon.icon-settings-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/settings_32_white.png");
+}
+i.icon.icon-about-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/about_32_white.png");
+}
+i.icon.icon-football-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/football_32_white.png");
+}
+i.icon.icon-winter-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/winter_32_white.png");
+}
+i.icon.icon-rugby-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/rugby_32_white.png");
+}
+i.icon.icon-basketball-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/basketball_32_white.png");
+}
+i.icon.icon-undo-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/undo_32_white.png");
+}
+i.icon.icon-more-black {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/more_32_black.png");
+}
+i.icon.icon-sales-rank-white {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/sales_rank_32_white.png");
+}
+.active i.icon.icon-sales-rank-white {
+  background-image: url("../img/sales_rank_32_green.png");
+}
+i.icon.icon-megaphone-white {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/megaphone_32_white.png");
+}
+.active i.icon.icon-megaphone-white {
+  background-image: url("../img/megaphone_32_green.png");
+}
+i.icon.icon-star-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/star_32_white.png");
+}
+.active i.icon.icon-star-white {
+  background-image: url("../img/star_32_green.png");
+}
+i.icon.icon-score-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/score_32_white.png");
+}
+.active i.icon.icon-score-white {
+  background-image: url("../img/score_32_green.png");
+}
+i.icon.icon-think-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/think_32_white.png");
+}
+.active i.icon.icon-think-white {
+  background-image: url("../img/think_32_green.png");
+}
+i.icon.icon-news-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/news_32_white.png");
+}
+.active i.icon.icon-news-white {
+  background-image: url("../img/news_32_green.png");
+}
+i.icon.icon-thumb-up-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/thumb_up_32_white.png");
+}
+.active i.icon.icon-thumb-up-white {
+  background-image: url("../img/thumb_up_32_green.png");
+}
+i.icon.icon-profit-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/profit_32_white.png");
+}
+.active i.icon.icon-profit-white {
+  background-image: url("../img/profit_32_green.png");
+}
+i.icon.icon-money-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/money_32_white.png");
+}
+i.icon.icon-money {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/money_32_white.png");
+}
+i.icon.icon-money-small {
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/money_16_white.png");
+}
+.active i.icon.icon-money-white {
+  background-image: url("../img/money_32_green.png");
+}
+i.icon.icon-gender-male-small {
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/gender_male_16_white.png");
+}
+i.icon.icon-gender-female-small {
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/gender_female_16_white.png");
+}
+i.icon.icon-signout-small {
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/signout_16_white.png");
+}
+i.icon.icon-password-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/password_32_white.png");
+}
+i.icon.icon-edit-user-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/edit_user_32_white.png");
+}
+i.icon.icon-like-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/like_32_white.png");
+}
+i.icon.icon-message-white {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/message_32_white.png");
+}
+
+.navbar .left {
+	font-size: 20px;
+}
+
+.navbar .left a.icon-only {
+	margin-right: 8px;
+}
+
+.tabbar a {
+  color: white;
+}
+.tabbar a.active {
+  color: #84D75B;
+  background: black;
+}
+
+.navbar {
+    height: 40px/*50px*/;
+	margin-bottom: 40px/*50px*/;
+	border:none;
+}
+.index-navbar {
+	border-bottom: none;
+}
+
+/*.navbar > .sub-toolbar {
+   top:50px;
+   height:40px;
+   background: #f3f3f3;
+   border:none;
+}
+*/
+.toolbar {
+	border: none;
+	height: 39px;
+}
+
+.navbar a.link, .toolbar a.link {
+	color: black;
+	line-height: 1px;
+}
+
+.navbar-through .page-content {
+    margin-top: 40px/*50px*/;
+}
+
+.view-left .page-content,
+.view-right .page-content {
+	margin-top: 0px;
+}
+
+.low-toolbar {
+	height: 50px;
+	background: #111;
+	border:none;
+}
+.low-toolbar .toolbar-inner {
+    padding:0;
+}
+.tabbar-labels span.tabbar-label {
+    font-size: 14px;
+}
+
+.green{
+  background: #84D75B/*#27AE61/*#66CC33*/;
+  height: 40px/*49px*/;
+}
+.navbar-through .page-content {
+	padding-top: 0px;
+}
+.toolbar-through .page-content {
+	padding-bottom: 0px;
+}
+/*
+.wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 80px /*90px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+}
+*/
+.slider-pagination {
+	text-align: right;
+	left: -10px;
+	bottom: 0px;
+	padding: 5px;
+	background: #222;
+	opacity: .7;
+	color: white;
+}
+
+.slider-pagination-bullet {
+	background: white;
+	opacity: .6;
+	margin: 0 3px;
+	width: 7px;
+	height: 7px;
+}
+
+.slider-pagination-active {
+	background: #84D75B;
+}
+
+.slider-slide-active {
+	background: #ccc;
+}
+.slider-slide span{
+	display: none;
+	color: red;
+}
+.slide-img img {
+	width: 100%;
+	height: 220px;
+}
+.slide-text {
+	float:left;
+	text-indent: 10px;
+}
+img {
+	border: none;
+}
+.user-avatar {
+	float:left;
+	width: 100px;
+	height: 100px;
+	background: gray;
+}
+.user-profile {
+	float:left;
+	padding: 5px 10px;
+	font-size:16px;
+}
+.profile-label {
+	padding-top: 10px;
+	font-size: 14px;
+}
